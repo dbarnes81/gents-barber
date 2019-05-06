@@ -1,5 +1,4 @@
 /* Header Section */
-
 #gents_wrapper_default {
   background-color: #000;
   width:100%;
@@ -7,6 +6,16 @@
 
 .first_container {
   padding:15px;
+}
+
+.navbar a{
+  font-size: 36px;
+  font-family: 'Pathway Gothic One', sans-serif !important;
+  text-transform: uppercase;
+}
+
+.navbar-bg-dark-1{
+  background: #000 !important;
 }
 
 .first_container h1, ul {
@@ -19,7 +28,7 @@
 
 .first_container a {
   text-decoration: none;
-  color:#ca9e40;
+  color:#fff;
 }
 
 .navbar_tags a:hover {
@@ -41,7 +50,7 @@
 .navbar_tags a{
   color:#fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 24px;
   text-transform: uppercase;
   margin-right: 0px;
 
@@ -52,10 +61,25 @@
   height: 750px;
 }
 
+.barber_img { 
+  opacity: 0.25;   
+  filter: alpha(opacity=50);
+}
+
 .interior-section img {
   background-size:cover;
   height:750px;
   width:100%;
+}
+
+.barber_img .bottom_pic {
+  width: 200px !important;
+  height: 200px !important;
+  position: absolute !important;
+  bottom: 50px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
 }
 
 .quote {
@@ -105,7 +129,6 @@
 /* About Section */
 
 .about-section {
-  width:100%;
   height:700px;
   padding: 25px 0px;
   background-color:#ffffff;
@@ -125,7 +148,7 @@
   margin-left: 45%;
 }
 
-.side-photo {
+/* .side-photo {
   display:inline-block;
   width: 39%;
   height: 500px;
@@ -136,13 +159,20 @@
   content:"";
   display:inline-block;
 }
-
+*/
 .about-section p{
-/*  display:inline-block;
-  position:relative;
-  bottom:50px;
-  padding:5px;
-  margin: 0 10px;*/
+ 
+ width: 50%;
+ padding:5px;
+ float:right;
+} 
+
+.wrap .side-photo{
+  width: 20%;
+}
+
+.side-photo {
+  width: 100px;
 }
 
 /* Services Section */

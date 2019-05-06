@@ -4,56 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Gent's Haven</title>
+</head>
 
+<body>
   <!-- Nav Wrapper Section -->
-  <nav id="gents_wrapper_default">
-    <div class="first_container">
-      <h1><a href="index.html">the gent's haven</a></h1>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-dark-1">
+    <!-- <div class="first_container"> -->
+    <a class="navbar-brand" href="index.html">the gent's haven</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <!-- Navbar Tags Section -->
 
-
-    <!-- Navbar Tags Section -->
     <div class="navbar_tags">
-      <ul>
+      <ul class="navbar-nav">
         <li><a href="#about">about</a></li>
         <li><a href="#services">services</a></li>
         <li><a href="#products">products</a></li>
         <li><a href="#gallery">gallery</a></li>
         <li><a href="#news">news</a></li>
         <li><a href="#contact">contact</a></li>
-        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
+  <!-- </div> -->
   </nav>
-</head>
-<body>
 
 <!-- Interior Body Section -->
-<div class="interior-section">
-  <img src="images/Gents-Haven-pic3.jpg" id="main_pic">
+<div class="intro interior-section">
+  <img class="barber_img" src="images/Gents-Haven-pic3.jpg" alt="bg" id="main_pic">
   <div class="quote">
-  <h2 class="great_hair"><span class="color_font">great hair</span> doesn't happen by chance.</h2>
-  <p>it happens by an appointment.</p>
+    <h2 class="great_hair"><span class="color_font">great hair</span> doesn't happen by chance.</h2>
+    <p>it happens by an appointment.</p>
     <div class="underlined-appointment"></div>
-  <a href="#" class="press_this">
-    make an appointment</a>
-  </div>
- </div>
+    <a href="#" class="press_this">
+      make an appointment</a>
+      <div class="bottom_pic">
+          <img src="https://theultimatebarber.com/wp-content/uploads/2017/04/certificates.png">
+        </div>
+      </div>
+  
+</div>
 
 <!-- About Section -->
 <div class="about-section" id="#about">
-   <h2>about</h2>
-   <div class="underline-about"></div>
-   <div class="wrap">
-<p>   <img src="images/side-pic.jpg" class="side-photo clearfix" style="float:left">
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, libero quasi ad deleniti quam aliquam. Fuga magni perspiciatis consequuntur, nesciunt quasi ab vel tempora reiciendis praesentium a rerum excepturi! Dolorum.</p>
+  <div class="container">
+    <h2>about</h2>
+    <div class="underline-about"></div>
+    <div class="wrap">
+      <div><img src="images/side-pic.jpg" class="side-photo clearfix" style="float:left"></div>
+
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, libero quasi ad deleniti quam aliquam.
+        Fuga magni perspiciatis consequuntur, nesciunt quasi ab vel tempora reiciendis praesentium a rerum excepturi!
+        Dolorum.</p>
+    </div>
+  </div>
 </div>
- </div>
 
 
  <!-- Services Section -->
@@ -377,8 +390,15 @@
        </ul>
      </footer>
 
-
+     <h2>Add React in One Minute</h2>       <p>This page demonstrates using React with no build tooling.</p>       
+     <p>React is loaded as a script tag.</p>        <!-- We will put our React component inside this div. -->       
+     <div id="like_button_container"></div>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>     
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>      <!-- Load our React component. -->     
+    <script src="like_button.js"></script>
 
     </body>
     </html>
