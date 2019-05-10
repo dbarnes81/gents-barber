@@ -61,8 +61,8 @@
   height: 750px;
 }
 
-.barber_img { 
-  opacity: 0.25;   
+.barber_img {
+  opacity: 0.25;
   filter: alpha(opacity=50);
 }
 
@@ -135,11 +135,11 @@
 }
 
 .about-img{
-  background-color: blue !important;
+
 }
 
 .about-text{
-  background: red !important;
+
 }
 
 .container-about{
@@ -181,11 +181,11 @@
 }
 */
 /* .about-section p{
- 
+
  width: 50%;
  padding:5px;
  float:right;
-} 
+}
 
 .wrap .side-photo{
   width: 20%;
